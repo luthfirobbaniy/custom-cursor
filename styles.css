@@ -1,0 +1,42 @@
+body {
+  background-color: #FFFFFF;
+  height: 100vh;
+  cursor: none;
+  margin: 0;
+  display: flex;
+  color: #000000;
+}
+
+#cursor {
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: opacity 0.25s ease-out;
+  opacity: 0;
+}
+
+.square {
+  height: 24px;
+  width: 24px;
+  background-color: #FFFFFF;
+  transform: rotate(45deg);
+  animation: rotate 1s linear infinite;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  line-height: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin: auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
